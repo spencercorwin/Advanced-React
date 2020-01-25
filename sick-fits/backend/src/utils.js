@@ -1,4 +1,4 @@
-function hasPermission(user, permissionsNeeded) {
+const hasPermission = (user, permissionsNeeded) => {
   const matchedPermissions = user.permissions.filter(permissionTheyHave =>
     permissionsNeeded.includes(permissionTheyHave)
   );
@@ -12,6 +12,6 @@ function hasPermission(user, permissionsNeeded) {
       ${user.permissions}
       `);
   }
-}
+};
 
 exports.hasPermission = hasPermission;
