@@ -7,8 +7,8 @@ import Pagination from "./Pagination";
 import { perPage } from "../config";
 
 const ALL_ITEMS_QUERY = gql`
-  query ALL_ITEMS_QUERY($skip: Int = 0) {
-    items(skip: $skip, orderBy: createdAt_DESC) {
+  query ALL_ITEMS_QUERY($skip: Int = 0, $first: Int = 4) {
+    items(first: $first, skip: $skip, orderBy: createdAt_DESC) {
       id
       title
       price
