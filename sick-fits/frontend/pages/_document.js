@@ -1,5 +1,5 @@
 import Document, { Head, Main, NextScript } from "next/document";
-import { SeverStyleSheet, ServerStyleSheet } from "styled-components";
+import { ServerStyleSheet } from "styled-components";
 
 export class MyDocument extends Document {
   static getInitialProps({ renderPage }) {

@@ -19,7 +19,7 @@ class MyApp extends App {
   }
   render() {
     const { Component, apollo, pageProps } = this.props;
-
+    // apollo.writeData({ data: { cartOpen: true } });
     return (
       <Container>
         {/* This is available because we export this MyApp
