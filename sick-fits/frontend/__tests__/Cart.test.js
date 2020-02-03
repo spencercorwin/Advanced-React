@@ -9,7 +9,7 @@ import { fakeUser, fakeCartItem } from "../lib/testUtils";
 const mocks = [
   {
     request: { query: CURRENT_USER_QUERY },
-    resule: {
+    result: {
       data: {
         me: {
           ...fakeUser(),
@@ -24,8 +24,8 @@ const mocks = [
   }
 ];
 
-describe("<Cart />", () => {
-  it("renders and matches snapshot", async () => {
+describe("<Cart/>", () => {
+  it("renders and matches snappy", async () => {
     const wrapper = mount(
       <MockedProvider mocks={mocks}>
         <Cart />
